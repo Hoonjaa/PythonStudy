@@ -1,14 +1,26 @@
-#다중 대입
-
-a = 'AAA'
-b = 'BBB'
-
-a, b = b, a
-#둘이 바뀜
+from pico2d import *
 
 
+open_canvas()
 
-def Sum(a,b):
-    return a+b
+player = load_image('character.png')
+grass = load_image('grass.png')
 
-Sum('dddd', 'eeee')
+
+dis = 0
+
+while dis < 800:
+    clear_canvas_now()
+    grass. draw_now(400,30)
+    player.draw_now(dis,90)
+
+
+    
+    dis += 5
+    delay(0.05)
+
+
+close_canvas()
+
+
+# Pivot 피붓
