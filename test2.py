@@ -1,5 +1,14 @@
-def Add(x,y):
-    result = x + y
-    print(result)
+#다중 대입
 
-Add(10,20)
+a = 'AAA'
+b = 'BBB'
+
+a, b = b, a
+#둘이 바뀜
+
+
+
+def Sum(a,b):
+    return a+b
+
+Sum('dddd', 'eeee')
